@@ -1,0 +1,16 @@
+{
+  "name": "tinker-jspaint",
+  "version": "0.1.0",
+  "description": "JSPaint plugin for Tinker",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "tinker": {
+    "name": "JSPaint",
+    "icon": "dist/images/icons/192x192.png",
+    "main": "dist/index.html"
+  }
+}

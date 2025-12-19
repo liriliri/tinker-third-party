@@ -1,0 +1,32 @@
+{
+  "name": "tinker-third-party",
+  "version": "0.1.0",
+  "description": "Tinker Third Party Plugins",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "format": "lsla prettier \"packages/tinker-*/*.mjs\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liriliri/tinker-third-party.git"
+  },
+  "keywords": [
+    "tinker"
+  ],
+  "author": "surunzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liriliri/tinker-third-party/issues"
+  },
+  "homepage": "https://github.com/liriliri/tinker-third-party#readme",
+  "devDependencies": {
+    "fs-extra": "^11.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "lerna": "^9.0.3",
+    "zx": "^8.8.5"
+  }
+}
