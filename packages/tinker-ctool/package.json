@@ -1,7 +1,7 @@
 {
-  "name": "tinker-svgedit",
+  "name": "tinker-ctool",
   "version": "0.1.0",
-  "description": "SVGEdit Plugin for TINKER",
+  "description": "Ctool Plugin for TINKER",
   "files": [
     "dist/"
   ],
@@ -9,8 +9,8 @@
     "build": "zx ./build.mjs"
   },
   "tinker": {
-    "name": "SVGEdit",
-    "icon": "dist/images/logo.svg",
+    "name": "Ctool",
+    "icon": "dist/icon/icon_utools.png",
     "main": "dist/index.html"
   },
   "keywords": [

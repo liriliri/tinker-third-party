@@ -12,5 +12,8 @@
     "name": "JSPaint",
     "icon": "dist/images/icons/192x192.png",
     "main": "dist/index.html"
-  }
+  },
+  "keywords": [
+    "tinker"
+  ]
 }

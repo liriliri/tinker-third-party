@@ -13,7 +13,7 @@
     "icon": "dist/assets/192.png",
     "main": "dist/editor.html"
   },
-   "keywords": [
+  "keywords": [
     "tinker"
   ]
 }

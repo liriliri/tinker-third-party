@@ -10,3 +10,6 @@
 [submodule "packages/tinker-jsoncrack/jsoncrack"]
 	path = packages/tinker-jsoncrack/jsoncrack
 	url = https://github.com/AykutSarac/jsoncrack.com.git
+[submodule "packages/tinker-ctool/Ctool"]
+	path = packages/tinker-ctool/Ctool
+	url = https://github.com/baiy/Ctool.git
