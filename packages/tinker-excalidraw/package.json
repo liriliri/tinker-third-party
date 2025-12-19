@@ -10,7 +10,11 @@
   },
   "tinker": {
     "name": "Excalidraw",
-    "icon": "dist/images/logo.svg",
-    "main": "dist/index.html"
-  }
+    "icon": "dist/favicon.svg",
+    "main": "dist/index.html",
+    "server": true
+  },
+   "keywords": [
+    "tinker"
+  ]
 }
