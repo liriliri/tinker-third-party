@@ -1,3 +1,9 @@
 [submodule "packages/tinker-jspaint/jspaint"]
 	path = packages/tinker-jspaint/jspaint
 	url = https://github.com/1j01/jspaint.git
+[submodule "packages/tinker-svgedit/svgedit"]
+	path = packages/tinker-svgedit/svgedit
+	url = https://github.com/SVG-Edit/svgedit.git
+[submodule "packages/tinker-excalidraw/excalidraw"]
+	path = packages/tinker-excalidraw/excalidraw
+	url = https://github.com/excalidraw/excalidraw.git

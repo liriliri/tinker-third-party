@@ -26,7 +26,6 @@
   "devDependencies": {
     "fs-extra": "^11.3.3",
     "html-minifier-terser": "^7.2.0",
-    "lerna": "^9.0.3",
     "zx": "^8.8.5"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "tinker-jspaint",
+  "name": "tinker-svgedit",
   "version": "0.1.0",
-  "description": "JSPaint Plugin for TINKER",
+  "description": "SVGEdit Plugin for TINKER",
   "files": [
     "dist/"
   ],
@@ -9,8 +9,8 @@
     "build": "zx ./build.mjs"
   },
   "tinker": {
-    "name": "JSPaint",
-    "icon": "dist/images/icons/192x192.png",
+    "name": "SVGEdit",
+    "icon": "dist/images/logo.svg",
     "main": "dist/index.html"
   }
 }
