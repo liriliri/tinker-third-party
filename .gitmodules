@@ -7,3 +7,6 @@
 [submodule "packages/tinker-excalidraw/excalidraw"]
 	path = packages/tinker-excalidraw/excalidraw
 	url = https://github.com/excalidraw/excalidraw.git
+[submodule "packages/tinker-jsoncrack/jsoncrack"]
+	path = packages/tinker-jsoncrack/jsoncrack
+	url = https://github.com/AykutSarac/jsoncrack.com.git

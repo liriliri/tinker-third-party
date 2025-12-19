@@ -11,8 +11,7 @@
   "tinker": {
     "name": "Excalidraw",
     "icon": "dist/favicon.svg",
-    "main": "dist/index.html",
-    "server": true
+    "main": "dist/index.html"
   },
    "keywords": [
     "tinker"

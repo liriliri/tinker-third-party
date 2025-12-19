@@ -1,0 +1,19 @@
+{
+  "name": "tinker-jsoncrack",
+  "version": "0.1.0",
+  "description": "JSON Crack Plugin for TINKER",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "tinker": {
+    "name": "JSON Crack",
+    "icon": "dist/assets/192.png",
+    "main": "dist/editor.html"
+  },
+   "keywords": [
+    "tinker"
+  ]
+}
