@@ -13,3 +13,6 @@
 [submodule "packages/tinker-ctool/Ctool"]
 	path = packages/tinker-ctool/Ctool
 	url = https://github.com/baiy/Ctool.git
+[submodule "packages/tinker-dpaint/DPaint-js"]
+	path = packages/tinker-dpaint/DPaint-js
+	url = https://github.com/steffest/DPaint-js.git

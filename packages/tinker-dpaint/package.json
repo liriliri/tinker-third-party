@@ -1,0 +1,19 @@
+{
+  "name": "tinker-dpaint",
+  "version": "0.1.0",
+  "description": "DPaint Plugin for TINKER",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "tinker": {
+    "name": "DPaint",
+    "icon": "dist/_img/dpaint-logo.png",
+    "main": "dist/index.html"
+  },
+  "keywords": [
+    "tinker"
+  ]
+}

@@ -7,6 +7,7 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 ## Plugins
 
 - [Ctool](packages/tinker-ctool): tinker-cool
+- [DPaint](packages/tinker-dpaint): tinker-dpaint
 - [Excalidraw](packages/tinker-excalidraw): tinker-excalidraw
 - [JSON Crack](packages/tinker-jsoncrack): tinker-jsoncrack
 - [JSPaint](packages/tinker-jspaint): tinker-jspaint
