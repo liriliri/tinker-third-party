@@ -1,6 +1,6 @@
 {
   "name": "tinker-dpaint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DPaint Plugin for TINKER",
   "files": [
     "dist/"
@@ -10,7 +10,7 @@
   },
   "tinker": {
     "name": "DPaint",
-    "icon": "dist/_img/dpaint-logo.png",
+    "icon": "dist/_img/icon192.png",
     "main": "dist/index.html"
   },
   "keywords": [
