@@ -25,3 +25,6 @@
 [submodule "packages/tinker-klecks/klecks"]
 	path = packages/tinker-klecks/klecks
 	url = https://github.com/bitbof/klecks.git
+[submodule "packages/tinker-minipaint/miniPaint"]
+	path = packages/tinker-minipaint/miniPaint
+	url = https://github.com/viliusle/miniPaint.git

@@ -1,0 +1,19 @@
+{
+  "name": "tinker-minipaint",
+  "version": "0.1.0",
+  "description": "miniPaint Plugin for TINKER",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "tinker": {
+    "name": "miniPaint",
+    "icon": "dist/images/logo-colors.png",
+    "main": "dist/index.html"
+  },
+  "keywords": [
+    "tinker"
+  ]
+}
