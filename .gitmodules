@@ -22,3 +22,6 @@
 [submodule "packages/tinker-piskel/piskel"]
 	path = packages/tinker-piskel/piskel
 	url = https://github.com/piskelapp/piskel.git
+[submodule "packages/tinker-klecks/klecks"]
+	path = packages/tinker-klecks/klecks
+	url = https://github.com/bitbof/klecks.git
