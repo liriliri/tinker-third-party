@@ -8,6 +8,7 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 
 - [Ctool](packages/tinker-ctool): tinker-cool
 - [DPaint](packages/tinker-dpaint): tinker-dpaint
+- [Draw.io](packages/tinker-drawio): tinker-drawio
 - [Excalidraw](packages/tinker-excalidraw): tinker-excalidraw
 - [JSON Crack](packages/tinker-jsoncrack): tinker-jsoncrack
 - [JSPaint](packages/tinker-jspaint): tinker-jspaint

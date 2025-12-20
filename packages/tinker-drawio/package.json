@@ -1,0 +1,19 @@
+{
+  "name": "tinker-drawio",
+  "version": "0.1.0",
+  "description": "Draw.io Plugin for TINKER",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "tinker": {
+    "name": "Draw.io",
+    "icon": "dist/images/icon-192-maskable.png",
+    "main": "dist/index.html"
+  },
+  "keywords": [
+    "tinker"
+  ]
+}

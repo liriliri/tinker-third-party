@@ -16,3 +16,6 @@
 [submodule "packages/tinker-dpaint/DPaint-js"]
 	path = packages/tinker-dpaint/DPaint-js
 	url = https://github.com/steffest/DPaint-js.git
+[submodule "packages/tinker-drawio/drawio"]
+	path = packages/tinker-drawio/drawio
+	url = https://github.com/jgraph/drawio.git
