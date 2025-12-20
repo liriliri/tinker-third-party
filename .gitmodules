@@ -19,3 +19,6 @@
 [submodule "packages/tinker-drawio/drawio"]
 	path = packages/tinker-drawio/drawio
 	url = https://github.com/jgraph/drawio.git
+[submodule "packages/tinker-piskel/piskel"]
+	path = packages/tinker-piskel/piskel
+	url = https://github.com/piskelapp/piskel.git

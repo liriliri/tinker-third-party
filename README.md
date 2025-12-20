@@ -12,4 +12,5 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 - [Excalidraw](packages/tinker-excalidraw): tinker-excalidraw
 - [JSON Crack](packages/tinker-jsoncrack): tinker-jsoncrack
 - [JSPaint](packages/tinker-jspaint): tinker-jspaint
+- [Piskel](packages/tinker-piskel): tinker-piskel
 - [SVGEdit](packages/tinker-svgedit): tinker-svgedit
