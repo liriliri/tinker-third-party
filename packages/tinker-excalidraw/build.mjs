@@ -1,22 +1,22 @@
 #!/usr/bin/env zx
 
-// 进入 excalidraw 目录
+// Enter excalidraw directory
 cd('excalidraw')
 
-// 安装依赖
+// Install dependencies
 await $`yarn`
 
-// 构建项目
+// Build project
 await $`yarn build`
 
-// 返回上级目录
+// Return to parent directory
 cd('..')
 
-// 清理并创建 dist 目录
+// Clean and create dist directory
 await $`rm -rf dist`
 await $`mkdir -p dist`
 
-// 复制构建产物到 dist 目录
+// Copy build artifacts to dist directory
 await $`cp -r excalidraw/excalidraw-app/build/* dist/`
 
 console.log(chalk.green('✓ Build completed successfully!'))
