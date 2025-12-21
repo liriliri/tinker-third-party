@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "Chili3D Plugin for TINKER",
   "files": [
-    "dist/",
-    "preload.js"
+    "dist/"
   ],
   "scripts": {
     "build": "zx ./build.mjs"
