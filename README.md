@@ -6,6 +6,7 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 
 ## Plugins
 
+- [AudioMass](packages/tinker-audiomass): tinker-audiomass
 - [Ctool](packages/tinker-ctool): tinker-cool
 - [DPaint](packages/tinker-dpaint): tinker-dpaint
 - [Draw.io](packages/tinker-drawio): tinker-drawio

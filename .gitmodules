@@ -28,3 +28,6 @@
 [submodule "packages/tinker-minipaint/miniPaint"]
 	path = packages/tinker-minipaint/miniPaint
 	url = https://github.com/viliusle/miniPaint.git
+[submodule "packages/tinker-audiomass/AudioMass"]
+	path = packages/tinker-audiomass/AudioMass
+	url = https://github.com/pkalogiros/AudioMass.git

@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "format": "lsla prettier \"packages/tinker-*/*.mjs\" --write"
+    "format": "lsla prettier \"packages/tinker-*/*.{mjs,js}\" --write"
   },
   "repository": {
     "type": "git",
