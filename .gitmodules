@@ -31,3 +31,6 @@
 [submodule "packages/tinker-audiomass/AudioMass"]
 	path = packages/tinker-audiomass/AudioMass
 	url = https://github.com/pkalogiros/AudioMass.git
+[submodule "packages/tinker-chili3d/chili3d"]
+	path = packages/tinker-chili3d/chili3d
+	url = https://github.com/xiangechen/chili3d.git

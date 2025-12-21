@@ -1,0 +1,20 @@
+{
+  "name": "tinker-chili3d",
+  "version": "0.1.0",
+  "description": "Chili3D Plugin for TINKER",
+  "files": [
+    "dist/",
+    "preload.js"
+  ],
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "tinker": {
+    "name": "Chili3D",
+    "icon": "dist/favicon.svg",
+    "main": "dist/index.html"
+  },
+  "keywords": [
+    "tinker"
+  ]
+}
