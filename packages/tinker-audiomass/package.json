@@ -1,9 +1,10 @@
 {
   "name": "tinker-audiomass",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AudioMass Plugin for TINKER",
   "files": [
-    "dist/"
+    "dist/",
+    "preload.js"
   ],
   "scripts": {
     "build": "zx ./build.mjs"
