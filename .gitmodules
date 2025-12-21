@@ -34,3 +34,6 @@
 [submodule "packages/tinker-chili3d/chili3d"]
 	path = packages/tinker-chili3d/chili3d
 	url = https://github.com/xiangechen/chili3d.git
+[submodule "packages/tinker-blockbench/blockbench"]
+	path = packages/tinker-blockbench/blockbench
+	url = https://github.com/JannisX11/blockbench.git

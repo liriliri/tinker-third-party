@@ -1,0 +1,19 @@
+{
+  "name": "tinker-blockbench",
+  "version": "0.1.0",
+  "description": "Blockbench Plugin for TINKER",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "tinker": {
+    "name": "Blockbench",
+    "icon": "dist/favicon.png",
+    "main": "dist/index.html"
+  },
+  "keywords": [
+    "tinker"
+  ]
+}
