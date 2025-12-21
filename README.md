@@ -16,6 +16,7 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 - [JSON Crack](packages/tinker-jsoncrack): tinker-jsoncrack
 - [JSPaint](packages/tinker-jspaint): tinker-jspaint
 - [Klecks](packages/tinker-klecks): tinker-klecks
+- [Method Draw](packages/tinker-method-draw): tinker-method-draw
 - [miniPaint](packages/tinker-minipaint): tinker-minipaint
 - [Motionity](packages/tinker-motionity): tinker-motionity
 - [Piskel](packages/tinker-piskel): tinker-piskel

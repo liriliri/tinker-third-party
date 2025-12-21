@@ -40,3 +40,6 @@
 [submodule "packages/tinker-motionity/motionity"]
 	path = packages/tinker-motionity/motionity
 	url = https://github.com/alyssaxuu/motionity.git
+[submodule "packages/tinker-method-draw/Method-Draw"]
+	path = packages/tinker-method-draw/Method-Draw
+	url = https://github.com/methodofaction/Method-Draw.git
