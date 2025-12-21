@@ -37,3 +37,6 @@
 [submodule "packages/tinker-blockbench/blockbench"]
 	path = packages/tinker-blockbench/blockbench
 	url = https://github.com/JannisX11/blockbench.git
+[submodule "packages/tinker-motionity/motionity"]
+	path = packages/tinker-motionity/motionity
+	url = https://github.com/alyssaxuu/motionity.git

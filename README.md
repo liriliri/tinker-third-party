@@ -17,5 +17,6 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 - [JSPaint](packages/tinker-jspaint): tinker-jspaint
 - [Klecks](packages/tinker-klecks): tinker-klecks
 - [miniPaint](packages/tinker-minipaint): tinker-minipaint
+- [Motionity](packages/tinker-motionity): tinker-motionity
 - [Piskel](packages/tinker-piskel): tinker-piskel
 - [SVGEdit](packages/tinker-svgedit): tinker-svgedit
