@@ -3,7 +3,8 @@
   "version": "0.1.1",
   "description": "JSPaint Plugin for TINKER",
   "files": [
-    "dist/"
+    "dist/",
+    "preload.js"
   ],
   "scripts": {
     "build": "zx ./build.mjs"
