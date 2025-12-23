@@ -69,7 +69,14 @@ for (const htmlFile of htmlFiles) {
 
   if (await fse.pathExists(sourcePath)) {
     const htmlContent = await fse.readFile(sourcePath, 'utf-8')
-    const minified = await minifyHTML(htmlContent, htmlMinifyOptions)
+    let minified = await minifyHTML(htmlContent, htmlMinifyOptions)
+
+    // Remove Content-Security-Policy meta tag
+    minified = minified.replace(
+      /<meta\s+http-equiv=["']Content-Security-Policy["'][^>]*>/gi,
+      ''
+    )
+
     await fse.writeFile(destPath, minified)
 
     const originalSize = htmlContent.length
