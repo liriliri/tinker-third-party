@@ -3,6 +3,7 @@
 import { cd, $ } from 'zx'
 import { existsSync, rmSync, cpSync } from 'fs'
 import { join } from 'path'
+import { glob } from 'glob'
 
 const __dirname = import.meta.dirname
 
@@ -30,6 +31,15 @@ if (existsSync(outDir)) {
   }
 
   cpSync(outDir, distDir, { recursive: true })
+
+  // Remove all .map files from dist directory
+  console.log('Removing sourcemap files...')
+  const mapFiles = await glob('**/*.map', { cwd: distDir, absolute: true })
+  mapFiles.forEach((mapFile) => {
+    rmSync(mapFile, { force: true })
+  })
+  console.log(`Removed ${mapFiles.length} sourcemap file(s)`)
+
   console.log('Build completed successfully!')
 } else {
   console.error('Error: out directory not found!')

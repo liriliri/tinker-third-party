@@ -1,6 +1,6 @@
 {
   "name": "tinker-blockbench",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Blockbench Plugin for TINKER",
   "files": [
     "dist/"

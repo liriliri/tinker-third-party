@@ -1,21 +1,51 @@
 #!/usr/bin/env zx
 
+import { cd, $ } from 'zx'
+import { existsSync, rmSync, cpSync } from 'fs'
+import { join } from 'path'
+import { glob } from 'glob'
+
+const __dirname = import.meta.dirname
+
 // Build svgedit and copy output to dist directory
-await cd('svgedit')
+cd(join(__dirname, 'svgedit'))
 
 // Install dependencies
+console.log('Installing dependencies...')
 await $`npm i`
 
 // Build the project
+console.log('Building svgedit...')
 await $`npm run build`
 
 // Go back to parent directory
-await cd('..')
+cd(__dirname)
+
+// Define source and destination paths
+const sourceDir = join(__dirname, 'svgedit', 'dist', 'editor')
+const distDir = join(__dirname, 'dist')
 
 // Remove existing dist directory if it exists
-await $`rm -rf dist`
+console.log('Copying build artifacts to dist...')
+
+if (existsSync(distDir)) {
+  rmSync(distDir, { recursive: true, force: true })
+}
 
 // Copy dist/editor to dist
-await $`cp -r svgedit/dist/editor dist`
+if (existsSync(sourceDir)) {
+  cpSync(sourceDir, distDir, { recursive: true })
 
-console.log('Build completed successfully!')
+  // Remove all .map files from dist directory
+  console.log('Removing sourcemap files...')
+  const mapFiles = await glob('**/*.map', { cwd: distDir, absolute: true })
+  mapFiles.forEach((mapFile) => {
+    rmSync(mapFile, { force: true })
+  })
+  console.log(`Removed ${mapFiles.length} sourcemap file(s)`)
+
+  console.log('Build completed successfully!')
+} else {
+  console.error('Error: Build output directory not found!')
+  process.exit(1)
+}

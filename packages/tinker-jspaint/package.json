@@ -1,6 +1,6 @@
 {
   "name": "tinker-jspaint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JSPaint Plugin for TINKER",
   "files": [
     "dist/",

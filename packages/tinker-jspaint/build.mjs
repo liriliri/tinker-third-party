@@ -6,6 +6,7 @@ import CleanCSS from 'clean-css'
 import fse from 'fs-extra'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { glob } from 'glob'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const sourceDir = path.join(__dirname, 'jspaint')
@@ -215,5 +216,13 @@ if (await fse.pathExists(libDir)) {
     }
   }
 }
+
+// Step 7: Remove all .map files from dist directory
+console.log('\nRemoving sourcemap files...')
+const mapFiles = await glob('**/*.map', { cwd: distDir, absolute: true })
+for (const mapFile of mapFiles) {
+  await fse.remove(mapFile)
+}
+console.log(`  ✓ Removed ${mapFiles.length} sourcemap file(s)`)
 
 console.log('\nBuild completed!\n')
