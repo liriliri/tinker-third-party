@@ -1,0 +1,24 @@
+{
+  "name": "tinker-hoppscotch",
+  "version": "0.1.0",
+  "description": "Hoppscotch Plugin for TINKER",
+  "files": [
+    "dist/",
+    "preload.js"
+  ],
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "tinker": {
+    "name": "Hoppscotch",
+    "icon": "dist/favicon.ico",
+    "main": "dist",
+    "preload": "preload.js"
+  },
+  "keywords": [
+    "tinker",
+    "api",
+    "rest",
+    "graphql"
+  ]
+}

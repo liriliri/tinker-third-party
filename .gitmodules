@@ -43,3 +43,6 @@
 [submodule "packages/tinker-method-draw/Method-Draw"]
 	path = packages/tinker-method-draw/Method-Draw
 	url = https://github.com/methodofaction/Method-Draw.git
+[submodule "packages/tinker-hoppscotch/hoppscotch"]
+	path = packages/tinker-hoppscotch/hoppscotch
+	url = https://github.com/hoppscotch/hoppscotch.git
