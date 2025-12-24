@@ -26,6 +26,7 @@
   "devDependencies": {
     "clean-css": "^5.3.3",
     "fs-extra": "^11.3.3",
+    "glob": "^13.0.0",
     "html-minifier-terser": "^7.2.0",
     "terser": "^5.36.0",
     "zx": "^8.8.5"
