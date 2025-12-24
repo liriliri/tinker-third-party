@@ -13,6 +13,7 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 - [DPaint](packages/tinker-dpaint): Recreation of the classic Deluxe Paint program.
 - [Draw.io](packages/tinker-drawio): Configurable diagramming/whiteboarding visualization application.
 - [Excalidraw](packages/tinker-excalidraw): Virtual collaborative whiteboard for sketching hand-drawn like diagrams.
+- [Hoppscotch](packages/tinker-hoppscotch): Open source API development ecosystem and HTTP client.
 - [JSON Crack](packages/tinker-jsoncrack): Powerful JSON visualization tool.
 - [JSPaint](packages/tinker-jspaint): Pixel-perfect web-based MS Paint remake.
 - [Klecks](packages/tinker-klecks): Powerful web-based painting application.

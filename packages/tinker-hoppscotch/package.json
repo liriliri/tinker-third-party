@@ -11,8 +11,9 @@
   },
   "tinker": {
     "name": "Hoppscotch",
-    "icon": "dist/favicon.ico",
-    "main": "dist",
+    "icon": "dist/icon.png",
+    "main": "dist/index.html",
+    "historyApiFallback": true,
     "preload": "preload.js"
   },
   "keywords": [

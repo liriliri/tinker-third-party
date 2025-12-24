@@ -1,7 +1,7 @@
 #!/usr/bin/env zx
 
 import { cd, $ } from 'zx'
-import { existsSync, rmSync, cpSync } from 'fs'
+import { existsSync, rmSync, cpSync, readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 
 const __dirname = import.meta.dirname
@@ -16,6 +16,34 @@ const envExamplePath = join(__dirname, 'hoppscotch', '.env.example')
 if (!existsSync(envPath) && existsSync(envExamplePath)) {
   console.log('Creating .env from .env.example...')
   cpSync(envExamplePath, envPath)
+}
+
+// Modify main.ts to set extension as default interceptor for web
+console.log('Configuring web interceptor to use extension...')
+const mainTsPath = join(
+  __dirname,
+  'hoppscotch',
+  'packages',
+  'hoppscotch-selfhost-web',
+  'src',
+  'main.ts'
+)
+
+if (existsSync(mainTsPath)) {
+  let mainTsContent = readFileSync(mainTsPath, 'utf-8')
+
+  // Change web defaultInterceptor from "browser" to "extension"
+  mainTsContent = mainTsContent.replace(
+    /web:\s*{[\s\S]*?defaultInterceptor:\s*["']browser["']/,
+    (match) =>
+      match.replace(
+        /defaultInterceptor:\s*["']browser["']/,
+        'defaultInterceptor: "extension"'
+      )
+  )
+
+  writeFileSync(mainTsPath, mainTsContent, 'utf-8')
+  console.log('Web interceptor configured to use extension by default')
 }
 
 // Install dependencies

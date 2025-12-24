@@ -1,109 +1,123 @@
 // HTTP request hook for Hoppscotch
 // This provides the ability to make HTTP requests without CORS restrictions
+// Using Node.js http/https modules in Electron preload context
 
-async function renderer() {
-  console.info('[Hoppscotch] Initializing extension hook')
+const { contextBridge } = require('electron')
+const http = require('http')
+const https = require('https')
+const { URL } = require('url')
 
-  // Set up the extension hook
-  window.__POSTWOMAN_EXTENSION_HOOK__ = {
-    cancelRequest: () => {
-      // TODO: Implement request cancellation if needed
-      console.info('[Hoppscotch] Cancel request called')
-    },
+// Helper: Convert Node.js Buffer to ArrayBuffer
+function bufferToArrayBuffer(buffer) {
+  return buffer.buffer.slice(
+    buffer.byteOffset,
+    buffer.byteOffset + buffer.byteLength
+  )
+}
 
-    sendRequest: async (config) => {
-      try {
-        const { url, method, headers, data } = config
+// Helper: Create error response
+function createErrorResponse(message, statusText = 'Error') {
+  return {
+    headers: {},
+    status: 500,
+    statusText,
+    data: bufferToArrayBuffer(Buffer.from(message)),
+  }
+}
 
-        // Don't send body for GET/HEAD requests
-        let body = data
-        if (method === 'GET' || method === 'HEAD') {
-          body = null
+// Helper: Normalize headers (convert arrays to strings)
+function normalizeHeaders(headers) {
+  const normalized = {}
+  for (const [key, value] of Object.entries(headers)) {
+    normalized[key] = Array.isArray(value) ? value.join('\n') : value
+  }
+  return normalized
+}
+
+// Send HTTP request using Node.js http/https modules
+async function sendRequest(config) {
+  return new Promise((resolve) => {
+    try {
+      const { url, method, headers, data } = config
+      const parsedUrl = new URL(url)
+      const httpModule = parsedUrl.protocol === 'https:' ? https : http
+      const body = method !== 'GET' && method !== 'HEAD' && data ? data : null
+
+      const startTime = Date.now()
+
+      const req = httpModule.request(
+        {
+          hostname: parsedUrl.hostname,
+          port: parsedUrl.port || (parsedUrl.protocol === 'https:' ? 443 : 80),
+          path: parsedUrl.pathname + parsedUrl.search,
+          method: method || 'GET',
+          headers: headers || {},
+        },
+        (res) => {
+          const chunks = []
+
+          res.on('data', (chunk) => chunks.push(chunk))
+
+          res.on('end', () => {
+            const endTime = Date.now()
+            const responseData = Buffer.concat(chunks)
+
+            console.info('[Hoppscotch] Request completed:', {
+              url,
+              method,
+              status: res.statusCode,
+              time: endTime - startTime,
+            })
+
+            resolve({
+              headers: normalizeHeaders(res.headers || {}),
+              status: res.statusCode,
+              statusText: res.statusMessage || '',
+              data: bufferToArrayBuffer(responseData),
+              config: { timeData: { startTime, endTime } },
+            })
+          })
         }
+      )
 
-        const startTime = Date.now()
-
-        // Use native fetch API
-        const response = await fetch(url, {
-          method,
-          headers,
-          body,
-          // Important: This allows requests to any origin
-          mode: 'cors',
-          credentials: 'omit',
-        })
-
-        const endTime = Date.now()
-
-        // Get response data as ArrayBuffer
-        const responseData = await response.arrayBuffer()
-
-        // Convert headers to object
-        const responseHeaders = {}
-        response.headers.forEach((value, key) => {
-          responseHeaders[key] = value
-        })
-
-        console.info('[Hoppscotch] Request completed:', {
-          url,
-          method,
-          status: response.status,
-          time: endTime - startTime,
-        })
-
-        return {
-          headers: responseHeaders,
-          status: response.status,
-          statusText: response.statusText,
-          data: responseData,
-          config: {
-            timeData: {
-              startTime,
-              endTime,
-            },
-          },
-        }
-      } catch (error) {
+      req.on('error', (error) => {
         console.error('[Hoppscotch] Request error:', error)
-        return {
-          headers: {},
-          status: 500,
-          statusText: 'Network Error',
-          data: new TextEncoder().encode(`Request failed: ${error.message}`),
-          config: {},
-        }
-      }
-    },
+        resolve(
+          createErrorResponse(
+            `Request failed: ${error.message}`,
+            'Network Error'
+          )
+        )
+      })
 
-    getVersion: () => ({ major: 0, minor: 1, patch: 0 }),
-  }
-
-  // Set extension status to available
-  if (window.__HOPP_EXTENSION_STATUS_PROXY__) {
-    window.__HOPP_EXTENSION_STATUS_PROXY__.status = 'available'
-  } else {
-    // Create the status proxy if it doesn't exist
-    window.__HOPP_EXTENSION_STATUS_PROXY__ = {
-      status: 'available',
-      _subscribers: {},
-      subscribe(prop, func) {
-        if (Array.isArray(this._subscribers[prop])) {
-          this._subscribers[prop].push(func)
-        } else {
-          this._subscribers[prop] = [func]
-        }
-      },
+      if (body) req.write(body)
+      req.end()
+    } catch (error) {
+      console.error('[Hoppscotch] Request setup error:', error)
+      resolve(createErrorResponse(`Request failed: ${error.message}`))
     }
-  }
-
-  console.info('[Hoppscotch] Extension hook initialized successfully')
+  })
 }
 
-document.onreadystatechange = () => {
-  if (document.readyState === 'interactive') {
-    const script = document.createElement('script')
-    script.textContent = `(${renderer.toString()})()`
-    document.documentElement.appendChild(script)
-    document.documentElement.removeChild(script)
-  }
-}
+// Expose Hoppscotch extension hook
+contextBridge.exposeInMainWorld('__POSTWOMAN_EXTENSION_HOOK__', {
+  cancelRequest: () => console.info('[Hoppscotch] Cancel request called'),
+  sendRequest: (config) => sendRequest(config),
+  getVersion: () => ({ major: 0, minor: 1 }),
+})
+
+// Expose extension status proxy
+contextBridge.exposeInMainWorld('__HOPP_EXTENSION_STATUS_PROXY__', {
+  status: 'available',
+  _subscribers: {},
+  subscribe(prop, func) {
+    const subscribers = this._subscribers
+    if (Array.isArray(subscribers[prop])) {
+      subscribers[prop].push(func)
+    } else {
+      subscribers[prop] = [func]
+    }
+  },
+})
+
+console.info('[Hoppscotch] Extension hook initialized with Node.js HTTP')
