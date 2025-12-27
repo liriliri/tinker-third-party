@@ -1,6 +1,6 @@
 # tinker-minipaint
 
-miniPaint plugin for [Tinker](https://github.com/liriliri/tinker).
+miniPaint plugin for [TINKER](https://github.com/liriliri/tinker).
 
 ## About
 

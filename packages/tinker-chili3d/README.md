@@ -1,6 +1,6 @@
 # tinker-chili3d
 
-Chili3D plugin for [Tinker](https://github.com/liriliri/tinker).
+Chili3D plugin for [TINKER](https://github.com/liriliri/tinker).
 
 ## About
 

@@ -1,6 +1,6 @@
 # tinker-blockbench
 
-Blockbench plugin for [Tinker](https://github.com/liriliri/tinker).
+Blockbench plugin for [TINKER](https://github.com/liriliri/tinker).
 
 ## About
 

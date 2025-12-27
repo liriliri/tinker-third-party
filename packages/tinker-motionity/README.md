@@ -1,6 +1,6 @@
 # tinker-motionity
 
-Motionity plugin for [Tinker](https://github.com/liriliri/tinker).
+Motionity plugin for [TINKER](https://github.com/liriliri/tinker).
 
 ## About
 

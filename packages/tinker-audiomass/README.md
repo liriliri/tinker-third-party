@@ -1,6 +1,6 @@
 # tinker-audiomass
 
-AudioMass plugin for [Tinker](https://github.com/liriliri/tinker).
+AudioMass plugin for [TINKER](https://github.com/liriliri/tinker).
 
 ## About
 
