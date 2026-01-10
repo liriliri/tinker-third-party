@@ -21,4 +21,5 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 - [miniPaint](packages/tinker-minipaint): Online graphics editing tool using HTML5 technologies.
 - [Motionity](packages/tinker-motionity): Free and open source web-based motion graphics editor.
 - [Piskel](packages/tinker-piskel): Free online pixel art editor and animated sprite creation tool.
+- [Regex Vis](packages/tinker-regex-vis): Regex visualizer and editor for understanding regular expressions.
 - [SVGEdit](packages/tinker-svgedit): Powerful web-based SVG editor.

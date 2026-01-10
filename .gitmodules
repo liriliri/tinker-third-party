@@ -46,3 +46,6 @@
 [submodule "packages/tinker-hoppscotch/hoppscotch"]
 	path = packages/tinker-hoppscotch/hoppscotch
 	url = https://github.com/hoppscotch/hoppscotch.git
+[submodule "packages/tinker-regex-vis/regex-vis"]
+	path = packages/tinker-regex-vis/regex-vis
+	url = https://github.com/Bowen7/regex-vis.git
