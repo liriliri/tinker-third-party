@@ -6,8 +6,6 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 
 ## Plugins
 
-- [AudioMass](packages/tinker-audiomass): Full-featured web-based audio and waveform editing tool.
-- [Blockbench](packages/tinker-blockbench): Free modern model editor for low-poly and boxy models with pixel art textures.
 - [Chili3D](packages/tinker-chili3d): Web-based 3D CAD application for online model design and editing.
 - [Ctool](packages/tinker-ctool): Comprehensive toolkit for developers with various utilities.
 - [DPaint](packages/tinker-dpaint): Recreation of the classic Deluxe Paint program.
@@ -23,3 +21,20 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 - [Piskel](packages/tinker-piskel): Free online pixel art editor and animated sprite creation tool.
 - [Regex Vis](packages/tinker-regex-vis): Regex visualizer and editor for understanding regular expressions.
 - [SVGEdit](packages/tinker-svgedit): Powerful web-based SVG editor.
+
+<table width="100%" style="text-align:center">
+  <colgroup>
+    <col width="50%">
+    <col width="50%">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th>tinker-audiomass</th>
+      <th>tinker-blockbench</th>
+    </tr>
+    <tr>
+      <th><img src="./packages/tinker-audiomass/screenshot.png"/></th>
+      <th><img src="./packages/tinker-blockbench/screenshot.png"/></th>
+    </tr>
+  </tbody>
+</table>
