@@ -2,6 +2,8 @@
 
 Regex Vis plugin for [TINKER](https://github.com/liriliri/tinker).
 
+![Screenshot](https://raw.githubusercontent.com/liriliri/tinker-third-party/master/packages/tinker-regex-vis/screenshot.png)
+
 ## About
 
 This plugin integrates [Regex-Vis](https://github.com/Bowen7/regex-vis), a regex visualizer and editor, into TINKER. Regex-Vis provides an intuitive visual interface for understanding and testing regular expressions with real-time pattern visualization and interactive editing capabilities.

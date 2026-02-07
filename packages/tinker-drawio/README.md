@@ -2,6 +2,8 @@
 
 Draw.io plugin for [TINKER](https://github.com/liriliri/tinker).
 
+![Screenshot](https://raw.githubusercontent.com/liriliri/tinker-third-party/master/packages/tinker-drawio/screenshot.png)
+
 ## About
 
 This plugin integrates [draw.io](https://github.com/jgraph/drawio), a configurable diagramming/whiteboarding visualization application, into TINKER. Draw.io provides a powerful diagramming interface with support for flowcharts, UML diagrams, network diagrams, and many other types of technical drawings.

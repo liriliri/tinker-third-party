@@ -2,6 +2,8 @@
 
 Klecks plugin for [TINKER](https://github.com/liriliri/tinker).
 
+![Screenshot](https://raw.githubusercontent.com/liriliri/tinker-third-party/master/packages/tinker-klecks/screenshot.png)
+
 ## About
 
 This plugin integrates [Klecks](https://github.com/bitbof/klecks), a powerful web-based painting application, into TINKER. Klecks offers a comprehensive set of painting tools including brushes, layers, filters, and effects, making it perfect for digital art creation and image editing directly in your browser.

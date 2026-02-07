@@ -2,6 +2,8 @@
 
 Piskel plugin for [TINKER](https://github.com/liriliri/tinker).
 
+![Screenshot](https://raw.githubusercontent.com/liriliri/tinker-third-party/master/packages/tinker-piskel/screenshot.png)
+
 ## About
 
 This plugin integrates [Piskel](https://github.com/piskelapp/piskel), a free online pixel art editor and animated sprite creation tool, into TINKER. Piskel provides a simple and intuitive interface for creating pixel art, animations, and game sprites with features like onion skinning, layers, and frame management.
