@@ -2,6 +2,8 @@
 
 Chili3D plugin for [TINKER](https://github.com/liriliri/tinker).
 
+![Screenshot](https://raw.githubusercontent.com/liriliri/tinker-third-party/master/packages/tinker-chili3d/screenshot.png)
+
 ## About
 
 This plugin integrates [Chili3D](https://github.com/xiangechen/chili3d), a web-based 3D CAD application for online model design and editing. Chili3D achieves near-native performance by compiling OpenCascade (OCCT) to WebAssembly and integrating with Three.js, enabling powerful online modeling, editing, and rendering directly in your browser.

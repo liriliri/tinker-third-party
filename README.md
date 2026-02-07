@@ -6,8 +6,6 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
 
 ## Plugins
 
-- [Chili3D](packages/tinker-chili3d): Web-based 3D CAD application for online model design and editing.
-- [Ctool](packages/tinker-ctool): Comprehensive toolkit for developers with various utilities.
 - [DPaint](packages/tinker-dpaint): Recreation of the classic Deluxe Paint program.
 - [Draw.io](packages/tinker-drawio): Configurable diagramming/whiteboarding visualization application.
 - [Excalidraw](packages/tinker-excalidraw): Virtual collaborative whiteboard for sketching hand-drawn like diagrams.
@@ -29,12 +27,20 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
   </colgroup>
   <tbody>
     <tr>
-      <th>tinker-audiomass</th>
-      <th>tinker-blockbench</th>
+      <th><a href="./packages/tinker-audiomass/">tinker-audiomass</a></th>
+      <th><a href="./packages/tinker-blockbench/">tinker-blockbench</a></th>
     </tr>
     <tr>
       <th><img src="./packages/tinker-audiomass/screenshot.png"/></th>
       <th><img src="./packages/tinker-blockbench/screenshot.png"/></th>
+    </tr>
+    <tr>
+      <th><a href="./packages/tinker-chili3d/">tinker-chili3d</a></th>
+      <th><a href="./packages/tinker-ctool/">tinker-ctool</a></th>
+    </tr>
+    <tr>
+      <th><img src="./packages/tinker-chili3d/screenshot.png"/></th>
+      <th><img src="./packages/tinker-ctool/screenshot.png"/></th>
     </tr>
   </tbody>
 </table>
