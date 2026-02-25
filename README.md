@@ -7,13 +7,9 @@ This repository collects excellent web-based open source tool projects and conve
 All plugins in the list can be installed to TINKER by running `npm i -g tinker-xxx`.
 
 <table width="100%" style="text-align:center">
-  <colgroup>
-    <col width="50%">
-    <col width="50%">
-  </colgroup>
   <tbody>
     <tr>
-      <th><a href="./packages/tinker-audiomass/">tinker-audiomass</a></th>
+      <th width="50%"><a href="./packages/tinker-audiomass/">tinker-audiomass</a></th>
       <th><a href="./packages/tinker-blockbench/">tinker-blockbench</a></th>
     </tr>
     <tr>
