@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "Blockbench",
+    "description": "Free modern model editor for low-poly models with pixel art textures",
     "icon": "dist/favicon.png",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "免费的现代低多边形像素纹理模型编辑器"
+      }
+    }
   },
   "keywords": [
     "tinker"

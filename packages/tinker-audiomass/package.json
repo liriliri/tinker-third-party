@@ -11,9 +11,15 @@
   },
   "tinker": {
     "name": "AudioMass",
+    "description": "Free web-based audio and waveform editing tool",
     "icon": "dist/icon.png",
     "preload": "preload.js",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "免费的网页端音频和波形编辑工具"
+      }
+    }
   },
   "keywords": [
     "tinker"

@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "Draw.io",
+    "description": "Configurable diagramming and whiteboarding visualization application",
     "icon": "dist/images/icon-192-maskable.png",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "可配置的图表绘制和白板可视化应用"
+      }
+    }
   },
   "keywords": [
     "tinker"

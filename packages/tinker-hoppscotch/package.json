@@ -11,10 +11,16 @@
   },
   "tinker": {
     "name": "Hoppscotch",
+    "description": "Open source API development ecosystem for testing and debugging APIs",
     "icon": "dist/icon.png",
     "main": "dist/index.html",
     "historyApiFallback": true,
-    "preload": "preload.js"
+    "preload": "preload.js",
+    "locales": {
+      "zh-CN": {
+        "description": "开源 API 开发生态系统，用于测试和调试 API"
+      }
+    }
   },
   "keywords": [
     "tinker",

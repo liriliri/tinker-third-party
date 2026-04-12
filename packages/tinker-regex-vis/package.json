@@ -10,9 +10,15 @@
   },
   "tinker": {
     "name": "Regex Vis",
+    "description": "Regex visualizer and editor with real-time pattern visualization",
     "icon": "dist/favicon.png",
     "main": "dist/index.html",
-    "historyApiFallback": true
+    "historyApiFallback": true,
+    "locales": {
+      "zh-CN": {
+        "description": "正则表达式可视化编辑器，支持实时模式可视化"
+      }
+    }
   },
   "keywords": [
     "tinker"

@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "DPaint",
+    "description": "Web-based recreation of the classic Deluxe Paint bitmap graphics editor",
     "icon": "dist/_img/icon192.png",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "经典 Deluxe Paint 位图图形编辑器的网页端重现"
+      }
+    }
   },
   "keywords": [
     "tinker"

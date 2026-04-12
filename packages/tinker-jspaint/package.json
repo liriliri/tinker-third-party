@@ -11,9 +11,15 @@
   },
   "tinker": {
     "name": "JSPaint",
+    "description": "Pixel-perfect web-based MS Paint remake with modern improvements",
     "icon": "dist/images/icons/192x192.png",
     "main": "dist/index.html",
-    "preload": "preload.js"
+    "preload": "preload.js",
+    "locales": {
+      "zh-CN": {
+        "description": "像素级还原的网页端 MS Paint 重制版"
+      }
+    }
   },
   "keywords": [
     "tinker"

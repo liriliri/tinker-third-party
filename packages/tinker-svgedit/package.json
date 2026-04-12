@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "SVGEdit",
+    "description": "Powerful web-based SVG vector graphics editor",
     "icon": "dist/images/logo.svg",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "强大的网页端 SVG 矢量图形编辑器"
+      }
+    }
   },
   "keywords": [
     "tinker"

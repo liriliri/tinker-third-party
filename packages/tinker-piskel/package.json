@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "Piskel",
+    "description": "Free online pixel art editor and animated sprite creation tool",
     "icon": "dist/logo.png",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "免费的在线像素画编辑器和动画精灵创建工具"
+      }
+    }
   },
   "keywords": [
     "tinker"

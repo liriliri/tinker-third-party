@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "Chili3D",
+    "description": "Web-based 3D CAD application for online model design and editing",
     "icon": "dist/favicon.svg",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "网页端 3D CAD 应用，用于在线模型设计和编辑"
+      }
+    }
   },
   "keywords": [
     "tinker"

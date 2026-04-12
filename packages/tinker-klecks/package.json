@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "Klecks",
+    "description": "Web-based painting application with brushes, layers, filters and effects",
     "icon": "dist/logo.png",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "网页端绘画应用，支持画笔、图层、滤镜和特效"
+      }
+    }
   },
   "keywords": [
     "tinker"

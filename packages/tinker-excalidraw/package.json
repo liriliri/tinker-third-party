@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "Excalidraw",
+    "description": "Virtual collaborative whiteboard for sketching hand-drawn like diagrams",
     "icon": "dist/favicon.svg",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "用于绘制手绘风格图表的虚拟协作白板"
+      }
+    }
   },
   "keywords": [
     "tinker"

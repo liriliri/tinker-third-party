@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "Method Draw",
+    "description": "Simple and streamlined web-based SVG vector drawing application",
     "icon": "dist/images/favicon.svg",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "简洁流畅的网页端 SVG 矢量绘图应用"
+      }
+    }
   },
   "keywords": [
     "tinker"

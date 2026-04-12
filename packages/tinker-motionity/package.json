@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "Motionity",
+    "description": "Free web-based motion graphics editor with keyframing and animations",
     "icon": "dist/assets/logo.svg",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "免费的网页端动态图形编辑器，支持关键帧和动画"
+      }
+    }
   },
   "keywords": [
     "tinker"

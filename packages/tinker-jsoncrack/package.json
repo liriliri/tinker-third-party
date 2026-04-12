@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "JSON Crack",
+    "description": "JSON visualization tool that transforms data into interactive graphs",
     "icon": "dist/assets/192.png",
-    "main": "dist/editor.html"
+    "main": "dist/editor.html",
+    "locales": {
+      "zh-CN": {
+        "description": "将 JSON 数据转换为交互式图表的可视化工具"
+      }
+    }
   },
   "keywords": [
     "tinker"

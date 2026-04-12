@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "Ctool",
+    "description": "Comprehensive developer toolkit for encoding, encryption and format conversion",
     "icon": "dist/icon/icon_utools.png",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "开发者综合工具箱，支持编解码、加解密和格式转换"
+      }
+    }
   },
   "keywords": [
     "tinker"

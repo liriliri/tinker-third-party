@@ -10,8 +10,14 @@
   },
   "tinker": {
     "name": "miniPaint",
+    "description": "Online graphics editing tool using HTML5 technologies",
     "icon": "dist/images/logo-colors.png",
-    "main": "dist/index.html"
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "基于 HTML5 技术的在线图形编辑工具"
+      }
+    }
   },
   "keywords": [
     "tinker"
