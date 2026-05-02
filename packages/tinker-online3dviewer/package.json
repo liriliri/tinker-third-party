@@ -1,0 +1,25 @@
+{
+  "name": "tinker-online3dviewer",
+  "version": "0.1.0",
+  "description": "Online 3D Viewer Plugin for TINKER",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "tinker": {
+    "name": "Online 3D Viewer",
+    "description": "Online 3D model viewer supporting OBJ, STL, GLTF, 3DM, and more formats",
+    "icon": "dist/assets/images/3dviewer_net_favicon.ico",
+    "main": "dist/index.html",
+    "locales": {
+      "zh-CN": {
+        "description": "在线 3D 模型查看器，支持 OBJ、STL、GLTF、3DM 等多种格式"
+      }
+    }
+  },
+  "keywords": [
+    "tinker"
+  ]
+}

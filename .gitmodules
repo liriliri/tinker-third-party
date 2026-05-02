@@ -49,3 +49,6 @@
 [submodule "packages/tinker-regex-vis/regex-vis"]
 	path = packages/tinker-regex-vis/regex-vis
 	url = https://github.com/Bowen7/regex-vis.git
+[submodule "packages/tinker-online3dviewer/Online3DViewer"]
+	path = packages/tinker-online3dviewer/Online3DViewer
+	url = https://github.com/kovacsv/Online3DViewer.git

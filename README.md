@@ -72,5 +72,13 @@ All plugins in the list can be installed to TINKER by running `npm i -g tinker-x
       <th><img src="./packages/tinker-piskel/screenshot.png"/></th>
       <th><img src="./packages/tinker-regex-vis/screenshot.png"/></th>
     </tr>
+    <tr>
+      <th><a href="./packages/tinker-svgedit/">tinker-svgedit</a></th>
+      <th><a href="./packages/tinker-online3dviewer/">tinker-online3dviewer</a></th>
+    </tr>
+    <tr>
+      <th><img src="./packages/tinker-svgedit/screenshot.png"/></th>
+      <th><img src="./packages/tinker-online3dviewer/screenshot.png"/></th>
+    </tr>
   </tbody>
 </table>
